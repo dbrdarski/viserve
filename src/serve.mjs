@@ -16,14 +16,12 @@ export default async () => {
 
   const app = connect();
 
+  const simplePage = content => renderPage(Html => <Html>{content}</Html>)
+  // renderPage(Html => <Html>Hello.</Html>)
   const router = new Router({
-    '/': renderPage(Html => <Html>Hello.</Html>),
-    "/user/:id": (params) => `User id: ${params.id}`,
+    '/': simplePage("Hello."),
     "/video": () => printHTML(<HtmlPage>Hello.</HtmlPage>),
-
-    // '/gallery/:album/:size/:filename(.*)': $ => albums[$.album].thumbs[$.filename][$.size],
-    "(.*)": () =>
-      printHTML(textPage("Not found.", { title: "404 - Page not found" })),
+    "(.*)": simplePage("404 - Not found"),
   });
 
   app.use(serveStatic("public"));
