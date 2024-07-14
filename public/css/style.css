@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+
+#topbar {
+    height: 60px;
+    background: #661112;
+    border-bottom: 2px solid #cc3334;
+    filter: hue-rotate(60deg);
+    /* background: #fc0;
+    filter: brightness(0.8) hue-rotate(315deg) grayscale(.1);
+    filter: brightness(0.9) grayscale(.1); */
+}
+
+#course-header,
+#course-description {
+    height: 240px;
+    background: #222;
+}
+#course-description {
+    height: 400px;
+}
+#course-video-preview {
+    padding: 40px;
+    max-width: 960px;
+    margin: auto;
+}
+
+/* #course-description {
+    background: #222;
+} */
