@@ -6,7 +6,11 @@ export default HtmlPage => (
     </header>
     <main>
       <header id="course-header">
-
+        <div class="section-inner">
+          <div class="caption">Лекција #5</div>
+          <h1>Видови на родителски пристапи</h1>
+          <p>Во наредниот модул ќе научите за тоа тоа и тоа.</p>
+        </div>
       </header>
       <section id="course-video-preview">
         <div style="max-width: 1080px; margin: auto; font-family: Gordita, Avenir, Helvetica Neue, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;">
